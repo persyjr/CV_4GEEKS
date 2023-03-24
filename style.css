@@ -1,0 +1,13 @@
+*{
+    font: 'poopins';
+}
+main{
+    display: flex;
+}
+#experiencia{
+    flex:7;
+}
+
+#contacto{
+    flex:3;
+}
