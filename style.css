@@ -23,8 +23,62 @@ main{
 #fotoPerfil{
     border-radius: 50%;
     padding: 20%;
+    object-fit: scale-down;
+    height: 400px;
+    width: 400px;
 }
 #boxProcess{
     border-radius: 50%;
     padding: 20%;
 }
+.list-group blockquote:hover, .list-group blockquote:active{
+
+    background-color: #9fd0e48c;
+}
+.text_profile{
+    display: flex;
+    font-style: italic;
+    font-family: impact;
+    font-size: 1.5em ;
+    font-variant: normal;
+    font-weight: normal;
+    color: rgba(10, 10, 110, 0.92);
+    text-indent: 30%;
+    text-align: justify;
+    text-decoration: blink;
+    line-height: 0.9em;
+}
+.comillas{
+    font-size: 15em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgba(64, 189, 211, 0.92);
+}
+
+.button1{
+    
+    font-size: 1em;
+    width: 150px;;
+    height: 50px;
+    color:rgb(254, 254, 254);
+    padding: 1%;
+    background-color:  rgba(64, 189, 211, 0.92);
+    
+    transition: background-color is linear;
+    border-radius:20%;
+}
+.button1:hover {
+    background-color: rgb(63, 236, 208);
+    transform: scale(1.4);
+  }
+
+
+input{
+    transition: background-color is linear;
+    transition: transform 150ms ease-in-out;
+}
+
+a:hover, input:hover, 
+a:focus, input:focus{
+    background-color: rgb(63, 236, 208);
+}
+
