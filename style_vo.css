@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family-Oswald:400:700');
+
+/* PRIMER HOJA DE CSS PARA PRACTICA 4GEEKS PROFE MACCA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #434750;
+}
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+ul li{
+    position:relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+
+}
+
+ul li:hover{
+    background: #33a3ee;
+    transform: translateX(-50px);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+ul li:hover::before{
+    background: #1f5378;
+}
+
+ul li::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #353535;
+    transform-origin: bottom;
+    transform: skewX(45deg);/*property applies a 2D or 3D transformation to an element. /
+    transition: 0.5s; /* me permite indicarle que propiedades de css sean animadas */
+}
+ul li:hover::after{
+    background: #2982b9;
+}
+ul li a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+ul li:hover a{
+    color: #fff;
+
+}
+
+ul li:last-child::after{
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25); /*me permite darle sombra a mi elemento*/
+}
+main{
+    display: flex;
+}
+#experiencia{
+    flex:7;
+    display: flex;
+}
+
+#contacto{
+    flex:2;
+}
+
+#profile{
+    flex:4;
+}
+
+#circle_1{
+    flex:4;
+}
+#fotoPerfil{
+    border-radius: 50%;
+    padding: 20%;
+    object-fit: scale-down;
+    height: 400px;
+    width: 400px;
+}
+#boxProcess{
+    border-radius: 50%;
+    padding: 20%;
+}
+.list-group blockquote:hover, .list-group blockquote:active{
+
+    background-color: #9fd0e48c;
+}
+.text_profile{
+    display: flex;
+    font-style: italic;
+    font-family: impact;
+    font-size: 1.5em ;
+    font-variant: normal;
+    font-weight: normal;
+    color: rgba(10, 10, 110, 0.92);
+    text-indent: 30%;
+    text-align: justify;
+    text-decoration: blink;
+    line-height: 0.9em;
+}
