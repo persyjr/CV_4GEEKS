@@ -18,10 +18,11 @@ body{
     min-height: 100vh;
     background: #232427;
 }
-.container .card{
+.contenedor .carta{
     position: relative;
     
     min-width: 520px;
+    
     /*width: 90vh;*/
     height: 1400px;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0),
@@ -32,7 +33,7 @@ body{
     margin: 3px;
 }
 
-.container .card::before{
+.contenedor .carta::before{
     content: '';
     position: absolute;
     top: 0;
@@ -42,9 +43,10 @@ body{
     background: rgba(225,255,255,0.1);
     
 }
-.container .card .box{
+.contenedor .carta .caja{
     
     position: absolute;
+    
     top: 20px;
     Left: 20px;
     right: 20px;
@@ -62,7 +64,7 @@ body{
     overflow: hidden;
 }
 
-.container .card .box::before{
+.contenedor .carta .caja::before{
     content: '';
     position: absolute;
     top: 0;
@@ -71,11 +73,11 @@ body{
     background: rgba(225,255,255,0.05);
     pointer-events: none;
 }
-.container .card .box:hover{
+.contenedor .carta .caja:hover{
     transform: translateY(-50px);
     box-shadow: 0 40px 70px rgba(0,0,0,0.5);
 }
-.container .card .box .paragrhap:hover{
+.contenedor .carta .caja .paragrhap:hover{
     transform: translateY(-20px);
     box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
     transition: 0.9s;
@@ -93,16 +95,17 @@ body{
     border-radius: 30%;
 }
 
-.container .card .box .content h2{
+.contenedor .carta .caja .contenido h2{
     position: absolute;
     top: -15px;
     right:50px;
     font-size: 6em; /*TAMAÑO DE TITULO */
     color: rgba(225,255,255,0.05);
 }
-.container .card .box .content {
+.contenedor .carta .caja .contenido {
     padding: 3%;
     text-align: justify;
+    width: 100%;
 }
 
 
@@ -217,3 +220,32 @@ ul:hover .text{
     
     
 }
+.bodyswipper {
+    background: rgba(225,255,255,0.1);;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    
+  }
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 700px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
