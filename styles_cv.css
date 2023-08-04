@@ -249,3 +249,6 @@ ul:hover .text{
     display: block;
     width: 100%;
   }
+  .quote{
+    padding: 10%;
+  }
